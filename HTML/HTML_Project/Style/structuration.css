@@ -1,0 +1,36 @@
+p
+{
+	width: 20%;
+	min-width: 200px;
+}
+
+nav
+{
+	display : inline-block;
+	width: 150px;
+	border : 1px solid black;
+	margin-right : 5px;
+	vertical-align: bottom;
+}
+
+section
+{
+	display : inline-block;
+	border : 1px solid black;
+	vertical-align: bottom;
+	
+}
+
+
+@media all and (max-width: 1000px)
+{
+	section
+	{
+		display: block;
+	}
+
+	nav
+	{
+		display: block;
+	}
+}

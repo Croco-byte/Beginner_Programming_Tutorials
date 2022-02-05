@@ -1,0 +1,68 @@
+
+body
+{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+section header
+{
+	text-align: center;
+}
+
+section article
+{
+	display: flex;
+	justify-content: space-around;
+}
+
+article div
+{
+	width: 33%;
+}
+
+
+a:hover
+{
+	font-style: italic;
+	font-weight: bold;
+}
+
+H2
+{
+	color: maroon;
+}
+
+
+#Image_2B
+{
+	border: 2px black solid;
+	box-shadow: 6px 6px 10px black;
+}
+
+aside
+{
+	margin-right: 20px;
+}
+
+
+@media all and (max-width: 1024px)
+{
+	#lisere
+	{
+		display:none;
+	}
+
+	section article
+	{
+
+		flex-direction: column;
+		text-align: justify;
+	}
+	article div
+	{
+		width: 100%
+	}
+
+}

@@ -1,0 +1,270 @@
+@font-face
+{
+	font-family: 'ballpark';
+	src: url('polices/ballpark.woff') format('woff'),
+		 url('polices/ballpark.ttf') format('truetype'),
+		 url('polices/ballpark.svg') format('svg'),
+		 url('polices/ballpark.eot') format('eot');
+		 font-weight: normal;
+		 font-style: normal;
+}
+
+@font-face
+{
+	font-family: 'dayrom';
+	src : url('polices/dayrom.woff') format('woff'),
+	 	  url('polices/dayrom.ttf') format('truetype'),
+		  url('polices/dayrom.svg') format('svg'),
+		  url('polices/dayrom.eot') format('eot');
+		 font-weight: normal;
+		 font-style: normal;
+		 
+}
+
+
+body
+{
+	font-family: 'Trebuchet MS', sans-serif;
+	color: #181818;
+	background-image: url(images/fond_jaune.png);
+}
+
+#main_wrapper
+{
+	width: 90%;
+	margin: auto;
+}
+
+header h2, section h1, nav a
+{
+	font-family: 'dayrom', sans-serif;
+	text-decoration: none;
+	color: #181818 ;
+}
+
+
+
+
+header
+{
+	background: url(images/separateur.png) repeat-x bottom;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+#titre_principal
+{
+	display: flex;
+	flex-direction: column;
+
+}
+
+#logo
+{
+	display: flex;
+	align-items: baseline;
+}
+
+
+header h1
+{
+	font-family: 'ballpark';
+	margin: 0 0 0 10px;
+}
+
+header h2
+{
+	margin-top: 0px;
+	font-size: 1.3em;
+	font-weight: normal;
+}
+
+nav ul
+{
+	list-style-type: none;
+	display: flex;
+}
+
+nav li
+{
+	margin-right: 15px;
+}
+
+nav a
+{
+	font-size: 1.3em;
+	padding-bottom: 10px;
+	text-decoration: none;
+}
+
+nav a:hover
+{
+	font-size: 1.4em;
+	color: #760001;
+	text-decoration: underline;
+}
+
+#banniere
+{
+	position: relative;
+	margin-top: 5px;
+	height : 320px;
+	background : url(images/sanfrancisco2.jpg) no-repeat;
+	background-size: cover;
+	border-radius: 8px;
+	box-shadow: 6px 6px 4px black;
+}
+
+
+
+#sous_banniere
+{
+	color: white;
+	background-color: rgba(42, 36, 34, 0.7);
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 2px;
+	border-radius: 8px;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+
+}
+
+#sous_banniere a
+{
+	background: url(images/fond_degraderouge.png) repeat-x;
+	color : white;
+	text-decoration: none;
+	position: absolute;
+	right: 10px;
+	padding: 5px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+
+
+section
+{
+	margin-top: 20px;
+	display: flex;
+	padding-bottom: 10px;
+	background-image: url(images/separateur.png);
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+
+section article
+{
+	flex: 3;
+	text-align: justify;
+	margin-right: 10px;
+}
+
+#categorie
+{
+	
+	vertical-align: middle;
+}
+
+aside
+{
+	position: relative;
+	flex: 1;
+	background-color: rgba(42, 36, 34, 0.7);
+	border-radius: 10px;
+	color: white;
+	text-align: justify;
+	height: 500px;
+	margin: auto;
+	padding: 10px;
+}
+
+aside h1
+{
+	font-family: 'dayrom', sans-serif;
+	color: white;
+	text-align: center;
+}
+
+
+.LUL
+{
+	text-align: center;
+}
+
+#Bulle
+{
+	position: absolute;
+	left: -12px;
+	top: 200px;
+}
+
+footer
+{
+	display: flex;
+	justify-content: space-between;
+	background-image: url(images/ico_top.png);
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+
+#Listes_amis
+{
+	display: flex;
+}
+
+#Listes_amis a
+{
+	color: #760001;
+	text-decoration: none;
+}
+
+.liste
+{
+	list-style-image: url(images/ico_liensexterne.png);
+}
+
+
+footer div:nth-child(2) img
+{
+
+	width: 100px;
+	border: 1px black solid;
+}
+
+
+
+
+
+@media all and (max-width: 1024px)
+{
+	nav ul
+	{
+		flex-direction: column;
+	}
+	nav a
+	{
+		font-size: 1em;
+	}
+	nav a:hover
+	{
+		font-size: 1.2em;
+	}
+	#banniere
+	{
+		display: none;
+	}
+	section
+	{
+		flex-direction: column;
+	}
+	.LiL
+	{
+		float: right;
+		margin-left: 15px;
+	}
+}

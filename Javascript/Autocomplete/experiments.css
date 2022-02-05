@@ -1,0 +1,292 @@
+@font-face {
+ font-family: "TitleFont";
+ src: url("Odachi.otf") format("otf"),
+        url("Odachi.woff") format("woff");
+}
+
+@font-face {
+ font-family: "Korean";
+ src: url("Dekiru.ttf") format("ttf"),
+        url("Dekiru.woff") format("woff"),
+        url("Dekiru.woff2") format("woff2");
+}
+
+#test {
+  display: flex;
+  justify-content: space-around;
+}
+
+body {
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  margin-top: -10px;
+  font-family: "TitleFont", serif;
+  color: green;
+  font-size: 4em;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.speech {
+  font-family: Korean, sans-serif;
+  font-weight: bold;
+  text-align: justify;
+  width: 50%;
+}
+
+.tool {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  font-family: "Korean", sans-serif;
+  font-weight: bold;
+  width: 50%;
+  
+}
+
+.fields {
+  
+}
+
+#calculer {
+  background-color: green;
+  border-radius: 15px;
+  border-width: 2px;
+  border-color: black;
+}
+
+#icons {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5px;
+}
+
+#airplaneIcon {
+  transform: scaleX(-1);
+}
+
+#airplaneIcon {
+  width: 100px;
+  height: 100px;
+}
+
+#co2 {
+  width: 80px;
+  height: 80px;
+}
+
+#tree {
+  width: 80px;
+  height: 80px;
+}
+
+#moneyTree {
+  width: 80px;
+  height: 80px;
+}
+
+#testing {
+  border: solid; 
+  border-color: #0F5D02; 
+  border-radius: 30px;
+}
+
+#names {
+  display: flex;
+  justify-content: space-around;
+}
+
+#distance {
+  width: 25%; 
+  text-align: center;
+}
+
+#emittedCO2 {
+  width: 25%; 
+  text-align: center;
+}
+
+#treesToPlant {
+  width: 25%; 
+  text-align: center;
+}
+
+#moneyToCompensate {
+  width: 25%; 
+  text-align: center;
+}
+
+#results {
+  display: flex;
+  justify-content: space-around;
+}
+
+#detailsAndDonate {
+  display: flex;
+}
+
+#detailsDiv {
+  margin-top: 5px;
+  margin-right: 5px;
+  width: 30%;
+  border: solid;
+  border-color: #0F5D02; 
+  border-radius: 30px;
+}
+
+#detailsTitle {
+  text-align: center;
+  text-decoration: underline;
+}
+
+#details {
+  text-align: center;
+}
+
+#donate {
+  margin-top: 5px;
+  margin-right: 5px;
+  width: 70%;
+  border: solid;
+  border-color: #0F5D02; 
+  border-radius: 30px;
+  display: flex;
+}
+
+#subDonate {
+  width: 50%;
+  text-align: justify;
+  margin-left: 10px;
+}
+
+#subDonate2 {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+#subDonate .span {
+  text-align: center;
+}
+
+#paypalButton {
+  width: 250px;
+  display: block;
+  position: absolute;  
+  top: 0;  
+  bottom: 0;  
+  left: 0;  
+  right: 0;  
+  margin: auto;
+}
+
+.conteneur {
+  display: flex;
+
+}
+
+
+.treeline{
+    position:fixed;
+    bottom:0px;
+    left:-2px;
+    height: 25%;
+}
+
+* { box-sizing: border-box; }
+body {
+  font: 16px Arial;
+}
+.autocomplete {
+  /*the container must be positioned relative:*/
+ 
+  display: inline-block;
+  width: 300px;
+}
+
+#airplane {
+  margin-left: 20px;
+  width: 80px;
+ 
+}
+
+.autocomplete2 {
+  /*the container must be positioned relative:*/
+  margin-left: 20px;
+
+  display: inline-block;
+  width: 300px;
+}
+
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+input[type=submit] {
+  background-color: DodgerBlue;
+  color: #fff;
+}
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 237px;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  /* background-color: #e9e9e9; */
+}
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+
+
+#exchangeRateTitle {
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Manipulation des formulaires</title>
+    <link rel="stylesheet" type="text/css" href="test.css">
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+</head>
+
+<body>
+
+	<h1>Don't be dummies : plant trees </h1>
+
+<div class="conteneur">
+	<div class="speech">
+
+	<p>The environmental impact of aviation occurs because aircraft engines emit heat, noise, particulates and gases which contribute to climate change and global dimming. Airplanes emit particles and gases such as carbon dioxide (CO2), water vapor, hydrocarbons, carbon monoxide, nitrogen oxides, sulfur oxides, lead, and black carbon which interact among themselves and with the atmosphere.</p><p>
+	
+	Despite emission reductions from automobiles and more fuel-efficient and less polluting turbofan and turboprop engines, the rapid growth of air travel in the past years contributes to an increase in total pollution attributable to aviation. From 1992 to 2005, passenger kilometers increased 5.2 percent per year. In the European Union, greenhouse gas emissions from aviation increased by 87 percent between 1990 and 2006.</p><p>
+
+	Comprehensive research shows that despite anticipated efficiency innovations to airframes, engines, aerodynamics and flight operations, there is no end in sight, even many decades out, to rapid growth in CO2 emissions from air travel and air freight, due to projected continual growth in air travel. This is because international aviation emissions have escaped international regulation up to the ICAO triennial conference in October 2016 agreed on the CORSIA offset scheme. In addition, due to low or non-existent taxes on aviation fuel, air travel enjoys a competitive advantage over other transportation modes due to lower fares. In the absence of effective regulation and without any market constraint, air travel could have a devastating impact on environment. It is then the moral responsibility of each individual to take concrete action in order to compensate the CO2 emitted during their travels. </p><p>
+
+	Lucky for you, this little tool gives you the opportunity to do just that ! Enter below the name of the airport of departure and arrival. It will then calculate the CO2 emitted by your travel, and the number of trees you need to plant in order to compensate it. You may then pay by Paypal the corresponding amount.  </p>
+  
+</div>
+
+<div class="tool">
+
+<br>
+    <form autocomplete="off">
+        <div class="fields">
+
+        <div class="autocomplete">
+  <input type="text" placeholder="First Airport">
+  <span class="close">Cancel</span>
+  <div class="dialog">   
+    </div>
+    </div>
+
+<br>
+
+    <div class="autocomplete">
+  <input type="text" placeholder="Second Airport">
+  <span class="close">Cancel</span>
+  <div class="dialog">   
+    </div>
+    </div>
+
+</div>
+<input type="submit" value="Calculer" id="calculer">
+
+    </form>
+
+
+    <p id="result"></p>
+
+</div>
+
+
+    <img src="treeline3.png" class="treeline"/>
+
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="test.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Formulaires</title>
+	<link rel="stylesheet" type="text/css" href="Style/formulaire.css">
+	<meta charset="utf-8">
+</head>
+
+
+
+<body>
+
+	<form method="post" action="traitement.php">
+	<fieldset>
+		<legend>Votre identité</legend>
+
+		<p>
+			<label for="pseudo">Veuillez entrer votre pseudo :</label>
+			<input type="text" name="pseudo" id="pseudo" size="30" maxlength="5" placeholder="MonPseudo" required /><br>
+			<input type="submit" name="submit" value="Envoyer"> <input type="reset" name="reset" value="Reset">
+		</p>
+		<p>
+			<label for="mdp">Veuillez saisir votre mot de passe :</label>
+			<input type="password" name="mdp" id="mdp"/>
+		</p>
+		<p>
+			<label for="zoneDeTexte">Écrivez ce qui vous passe par la tête :</label><br>
+			<textarea name="zoneDeTexte" id="zoneDeTexte" rows="8" cols="20">Valeur par défaut</textarea><br>
+			<input type="image" name="image" src="2B.jpg">
+		</p>
+	</fieldset>
+
+
+	<fieldset>
+		<legend>Votre jeu et votre âge</legend>
+		<input type="checkbox" name="cyberpunk" id="cyberpunk" /><label for="cyberpunk">Cyberpunk</label><br>
+		<input type="checkbox" name="elderScroll" id="elderScroll"/><label for="elderScroll">The Elder Scroll 6</label><br>
+		<input type="checkbox" name="Fallout" id="Fallout"/><label for="Fallout">Fallout 76</label><br>
+
+
+	<br>
+	<br>
+		<input type="radio" name="age" value="0-15" id="0-15"/><label for="0-15">0-15</label><br>
+		<input type="radio" name="age" value="15-30" id="15-30"/><label for="15-30">15-30</label><br>
+		<input type="radio" name="age" value="30-40" id="30-40"/><label for="30-40">30-40</label><br>
+	</fieldset>
+
+	<br>
+	<br>
+	<fieldset>
+		<legend> Liste déroulante</legend>
+		<label for="jeux">Les jeux de l'E3</label>
+		<select name="jeux" id="jeux">
+			<optgroup label="Jeux attendus">
+				<option value="Fallout">Fallout</option>
+				<option value="Metro">Metro Exodus</option>
+			</optgroup>
+			<optgroup label="Jeux inattendus">
+			<option value="TheElderScroll">The Elder Scroll</option>
+			<option value="Halo">Halo Infinite</option>
+			</optgroup>
+		</select>
+
+	</fieldset>
+		
+	</form>
+
+
+
+</body>
+</html>

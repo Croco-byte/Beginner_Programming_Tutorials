@@ -1,0 +1,75 @@
+@font-face {
+	font-family: 'MaPolice';
+	src: url('cac_champagne-webfont.woff') format('woff'),
+		url('cac_champagne-webfont.ttf') format('truetype'),
+		url('cac_champagne-webfont.eot') format('eot'),
+		url('cac_champagne-webfont.svg') format('svg');
+
+
+
+
+
+}
+
+
+body
+{
+	background-image: url(2B_grand.jpg), url(A2.png);
+	background-size: 300px 300px, 100px 300px;
+	background-repeat: no-repeat;
+	background-position: 0px 500px, right 500px;
+}
+
+.MettreEnBleu
+{
+	color : blue;
+	font-family: 'MaPolice', serif;
+	font-size: 1.5em;
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: overline;
+	opacity: 0.4;
+}
+
+h1
+{
+	text-align: center;
+}
+
+p
+{
+	text-align: justify;
+	border: 2px solid black;
+	border-radius: 20px;
+	padding: 10px 3px;
+	width: 50%;
+	height: 110px;
+	margin: auto;
+	overflow: auto;
+}
+
+.classeImage
+{
+	float: left;
+}
+
+.aEcrireEnDessous
+{
+	clear: both;
+}
+
+a
+{
+	color: black;
+}
+
+a:hover
+{
+	color : red;
+	font-style: italic;
+}
+
+a:focus
+{
+	color : green;
+}
